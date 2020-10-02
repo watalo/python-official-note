@@ -32,6 +32,9 @@ def fib(n):
 识别为用户自定义函数。 其他名称也可指向同一个函数对象并可被用来访问访函数:
 '''
 
+
+
+
 def ask_ok(prompt, retries=4,reminder='Please try again!'):
     while True:
         ok = input(prompt)
