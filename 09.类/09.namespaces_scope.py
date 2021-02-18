@@ -10,22 +10,28 @@
 
 # here put the import lib
 
-a = 1
-b = [1]
+import os
+from sys import argv
 
+class test:
+   pass
 
+def test2(arg1, arg2):
+   print(locals())
+   return arg1 + arg2
 
-
-def Func():
-   
-   a = 11
-   b = 222
+def test3():
+   b = 100
+   def test4():
+      b = 10000
+      print(locals())
+      return b
+   test4()
    print(locals())
 
-class Main():
-   def __init__():
-       pass
-
-# if __name__ == '__main__':
-Func()
+a = 1
+b = 2
+test2(a, b)
+test3()
 print(globals())
+
